@@ -4,10 +4,10 @@ from nsepy import get_history
 import matplotlib.pyplot as plt 
 import pandas as pd
 
-ticker = get_history(symbol='INFY',start=date(2015,7,1),end=date(2021,8,1))
+ticker = get_history(symbol='TCS',start=date(2020,9,2),end=date(2020,9,15))
 
-#sbin.to_csv('cdsl.csv') working
-print(ticker)
+ticker.to_csv('tcs_test_modified.csv')
+#print(ticker)
 
 #pricee = sbin['Close']  not working
 #print(pricee)
